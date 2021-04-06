@@ -1,5 +1,5 @@
-import express from 'express'
+import app from './app'
 
-const app = express()
-
-app.listen(3000, () => console.log('rodando'))
+app.listen(3000, () => {
+  console.log('server running')
+})
