@@ -1,10 +1,11 @@
-import { Request, Response } from 'express'
-class UserController {
-  async index (req: Request, res: Response): Promise<Response> {
-    const { teste } = req.body
+import { Request, Response } from 'express';
 
-    return res.json({ teste })
+class UserController {
+  async index(req: Request, res: Response): Promise<Response> {
+    const { teste } = req.body;
+
+    return res.json({ teste });
   }
 }
 
-export default UserController
+export default UserController;
